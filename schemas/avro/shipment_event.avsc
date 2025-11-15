@@ -1,0 +1,59 @@
+{
+  "type": "record",
+  "name": "ShipmentEvent",
+  "namespace": "logistream.ingest",
+  "doc": "Canonical shipment-level event for logistics flows.",
+  "fields": [
+    {
+      "name": "shipment_id",
+      "type": "string",
+      "doc": "Unique identifier for the shipment."
+    },
+    {
+      "name": "route_id",
+      "type": "string",
+      "doc": "Logical route or lane identifier (e.g., TOR-BCN-01)."
+    },
+    {
+      "name": "hub_id",
+      "type": "string",
+      "doc": "Hub or facility where the event occurred."
+    },
+    {
+      "name": "status",
+      "type": {
+        "type": "enum",
+        "name": "ShipmentStatus",
+        "symbols": [
+          "CREATED",
+          "IN_TRANSIT",
+          "AT_HUB",
+          "OUT_FOR_DELIVERY",
+          "DELIVERED",
+          "DELAYED",
+          "CANCELLED"
+        ]
+      },
+      "doc": "Operational status of the shipment at this event."
+    },
+    {
+      "name": "event_ts",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      },
+      "doc": "Event timestamp in epoch millis."
+    },
+    {
+      "name": "eta_baseline_minutes",
+      "type": "int",
+      "doc": "Baseline ETA in minutes from the route definition."
+    },
+    {
+      "name": "source_system",
+      "type": "string",
+      "doc": "Upstream system emitting this event (scanner, TMS, etc.).",
+      "default": "simulator"
+    }
+  ]
+}

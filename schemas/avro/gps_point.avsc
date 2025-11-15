@@ -1,0 +1,46 @@
+{
+  "type": "record",
+  "name": "GpsPoint",
+  "namespace": "logistream.ingest",
+  "doc": "GPS ping associated with a shipment/device on a lane.",
+  "fields": [
+    {
+      "name": "device_id",
+      "type": "string",
+      "doc": "Identifier of the GPS device or truck."
+    },
+    {
+      "name": "shipment_id",
+      "type": "string",
+      "doc": "Shipment identifier this GPS point is associated with."
+    },
+    {
+      "name": "lat",
+      "type": "double",
+      "doc": "Latitude in decimal degrees."
+    },
+    {
+      "name": "lon",
+      "type": "double",
+      "doc": "Longitude in decimal degrees."
+    },
+    {
+      "name": "speed_kmh",
+      "type": "float",
+      "doc": "Instantaneous speed in km/h."
+    },
+    {
+      "name": "heading_deg",
+      "type": "float",
+      "doc": "Heading in degrees (0-360)."
+    },
+    {
+      "name": "event_ts",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      },
+      "doc": "GPS message timestamp in epoch millis."
+    }
+  ]
+}
