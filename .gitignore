@@ -2,6 +2,8 @@
 .venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
 # Node / React
 node_modules/
@@ -21,7 +23,20 @@ Thumbs.db
 
 # Logs
 *.log
+logs/
 
 # Coverage / test artifacts
 .coverage
 htmlcov/
+pytest_cache/
+
+# Faust runtime state
+logistream-stream-processor-data/
+*faust*/
+
+# Docker runtime
+docker/data/
+docker/volumes/
+
+# Kafka metadata
+meta.properties
