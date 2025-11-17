@@ -10,8 +10,12 @@ Monorepo layout aligned with:
 - Ops API gateway
 - React dashboard
 - Observability stack
-
 ---
+<img width="1788" height="749" alt="Diagram" src="https://github.com/user-attachments/assets/b0eae0d7-e065-4fa5-8cb6-b809e7e7df4f" />
+
+
+
+
 
 ## 📄 License
 
