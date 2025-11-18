@@ -75,9 +75,9 @@ services:
     image: prom/prometheus:latest
     container_name: prometheus
     volumes:
-      - ../obs/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ../infra/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
-      - "${PROMETHEUS_PORT}:9090"
+      - "9090:9090"
     networks:
       - logistream
 
