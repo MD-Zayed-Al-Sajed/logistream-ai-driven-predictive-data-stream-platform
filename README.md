@@ -12,14 +12,11 @@ Monorepo layout aligned with:
 - Observability stack
 ---
 <img width="1788" height="749" alt="Diagram" src="https://github.com/user-attachments/assets/b0eae0d7-e065-4fa5-8cb6-b809e7e7df4f" />
-
-
 <img width="1463" height="912" alt="image" src="https://github.com/user-attachments/assets/99bfd8b4-99d0-4e19-a032-e44f1f767ded" />
 
 
 
 ## 📄 License
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Attribution Required](https://img.shields.io/badge/Attribution-Required-blue.svg)](NOTICE)
 
@@ -29,9 +26,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 This project includes original work authored by:
 
 **© 2025 Md Zayed Al Sajed**
-
 Any reuse, redistribution, or derivative work **MUST** include clear attribution:
-
 > “Original author: Md Zayed Al Sajed — LogiStream AIOps Platform”
 
 Attribution must appear in:
@@ -44,7 +39,7 @@ Failure to provide attribution **violates the NOTICE requirements**.
 
 ---
 
-## ⚠️ Responsible Use Disclaimer
+##Responsible Use Disclaimer
 
 This project is a research-oriented AIOps system designed for:
 - Data streaming  
@@ -54,11 +49,11 @@ This project is a research-oriented AIOps system designed for:
 
 **It is NOT intended for safety-critical or regulated environments**, including but not limited to:
 
-❌ Medical systems  
-❌ Autonomous vehicle controls  
-❌ Nuclear systems  
-❌ Industrial robotics without safety review  
-❌ Life-critical infrastructure  
+Medical systems  
+Autonomous vehicle controls  
+Nuclear systems  
+Industrial robotics without safety review  
+Life-critical infrastructure  
 
 This platform uses:
 - Heuristic logic  
@@ -70,17 +65,14 @@ Use in production requires:
 - Security review  
 - Performance testing  
 - Compliance checks  
-
 The author assumes **no liability** for misuse.
 
 ---
 
-## 🙌 Acknowledgements
+##Acknowledgements
 
 If you build on top of this platform, please acknowledge:
-
 **“Built using the LogiStream AIOps Platform by Md Zayed Al Sajed.”**
-
 ---
 
 
