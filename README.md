@@ -67,12 +67,4 @@ Use in production requires:
 - Compliance checks  
 The author assumes **no liability** for misuse.
 
----
-
-##Acknowledgements
-
-If you build on top of this platform, please acknowledge:
-**“Built using the LogiStream AIOps Platform by Md Zayed Al Sajed.”**
----
-
 
