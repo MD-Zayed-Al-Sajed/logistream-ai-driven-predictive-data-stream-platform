@@ -38,6 +38,15 @@ Attribution must appear in:
 Failure to provide attribution **violates the NOTICE requirements**.
 
 ---
+Engineered an Event-Driven AIOps Platform: Built a high-concurrency system using Kafka and Faust to ingest and decode massive data streams from IoT, microservices, and logistics sources in real-time.
+
+Implemented Predictive Analytics & ML: Replaced traditional batch reporting with in-flight feature engineering and machine learning to detect anomalies and predict logistics delays before they impact operations.
+
+Designed a Distributed Real-Time Architecture: Leveraged TimescaleDB for high-velocity time-series data and Avro/Schema Registry to ensure data integrity across a distributed ecosystem of producers and consumers.
+
+Developed Live Decision Dashboards: Created responsive React-based dashboards that consume live JSON streams via WebSockets, providing stakeholders with instant operational insights and automated system alerts.
+
+Containerized Cloud-Native Deployment: Managed the full SDLC of a fully containerized environment, ensuring the platform is scalable, observable, and capable of handling heterogeneous data sources with sub-second latency.
 
 ##Responsible Use Disclaimer
 
