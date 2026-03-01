@@ -32,13 +32,7 @@ Containerized Cloud-Native Deployment: Managed the full SDLC of a fully containe
 
 
 
-##Responsible Use Disclaimer
-
-This project is a research-oriented AIOps system designed for:
-- Data streaming  
-- Predictive analytics  
-- Educational and experimental purposes  
-- Log & telemetry pipelines  
+##Responsible Use Disclaimer  
 
 **It is NOT intended for safety-critical or regulated environments**, including but not limited to:
 
