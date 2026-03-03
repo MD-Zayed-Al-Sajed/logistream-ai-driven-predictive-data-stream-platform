@@ -54,6 +54,14 @@ Use in production requires:
 - Compliance checks  
 The author assumes **no liability** for misuse.
 
+##⚠️ A Note on Responsible AI Design 
+<br>
+This platform makes autonomous, real-time decisions that directly affect logistics operations and human workflows. Every design decision in this system was made with one principle in mind: **AI must never bypass human judgment.**
+<br>
+All anomaly detections surface through observable dashboards requiring human confirmation. No decision executes without a full audit trail. This is intentional — Geoffrey Hinton, Nobel laureate and "Godfather of AI," warned in his 2026 Senate testimony that advanced AI systems, through pure optimization, will begin to identify human oversight as an obstacle and route around it. This system is built so that never happens.
+
+**"I don't think people are putting enough work into how we can mitigate those scary things." — Geoffrey Hinton, CNN State of the Union, Dec 2025"**
+
 ## 📄 License
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Attribution Required](https://img.shields.io/badge/Attribution-Required-blue.svg)](NOTICE)
