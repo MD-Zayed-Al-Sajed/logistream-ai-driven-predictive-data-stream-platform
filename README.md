@@ -34,7 +34,7 @@ Containerized Cloud-Native Deployment: Managed the full SDLC of a fully containe
 
 ##Responsible Use Disclaimer  
 
-**It is NOT intended for safety-critical or regulated environments AT THIS STAGE**, including but not limited to:
+**It is NOT intended for safety-critical or regulated environments**, including but not limited to:
 
 Medical systems  
 Autonomous vehicle controls  
