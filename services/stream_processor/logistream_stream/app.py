@@ -41,7 +41,7 @@ alerts_topic = app.topic(TOPIC_ALERTS, value_type=bytes)
 route_hub_delay_stats = app.Table(
     "route_hub_delay_stats",
     default=lambda: {"total": 0, "delayed": 0},
-    partitions=3, # match ingest.shipment_events.v1
+    partitions=1, # match ingest.shipment_events.v1
 )
 
 
