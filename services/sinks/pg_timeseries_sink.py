@@ -14,6 +14,7 @@ from dotenv import load_dotenv
 from confluent_kafka import Consumer, KafkaException
 import psycopg2
 import psycopg2.extras
+from confluent_kafka import Consumer, KafkaException, KafkaError
 
 # --------------------------------------------------------------------
 #  Load .env (similar to the other services)
@@ -266,7 +267,12 @@ def main():
                 continue
 
             if msg.error():
-                raise KafkaException(msg.error())
+               # Kafka can briefly return UNKNOWN_TOPIC_OR_PART during startup/metadata refresh.
+               if msg.error().code() == KafkaError.UNKNOWN_TOPIC_OR_PART:
+                  logger.warning("Kafka topic metadata not ready yet: %s", msg.error())
+                  time.sleep(2)
+                  continue
+               raise KafkaException(msg.error())
 
             has_consumed_any = True
 

@@ -10,7 +10,14 @@ if env_path.exists():
     load_dotenv(env_path)
 
 # Kafka + Schema Registry
-KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BROKER", "kafka:9092")
+# Prefer the standard docker-compose variable name.
+# Fall back to older variable names for backward compatibility.
+KAFKA_BOOTSTRAP_SERVERS = (
+    os.getenv("KAFKA_BOOTSTRAP_SERVERS")
+    or os.getenv("KAFKA_BROKER")
+    or "kafka:9092"
+)
+
 SCHEMA_REGISTRY_URL = os.getenv("SCHEMA_REGISTRY_URL", "http://schemareg:8081")
 
 # Topics
@@ -18,5 +25,5 @@ TOPIC_SHIPMENT_EVENTS = "ingest.shipment_events.v1"
 TOPIC_GPS_POINTS = "ingest.gps_points.v1"
 
 # Simulator tuning
-DEFAULT_EPS = int(os.getenv("SIMULATOR_EPS", "100"))  # events per second (per stream)
+DEFAULT_EPS = int(os.getenv("SIMULATOR_EPS", "100"))  # events per second per stream
 RANDOM_SEED = int(os.getenv("SIMULATOR_SEED", "42"))
