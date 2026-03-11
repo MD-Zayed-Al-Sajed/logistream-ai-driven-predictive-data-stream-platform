@@ -11,9 +11,7 @@ Monorepo layout aligned with:
 - React dashboard
 - Observability stack
 ---
-<img width="1788" height="749" alt="Diagram" src="https://github.com/user-attachments/assets/b0eae0d7-e065-4fa5-8cb6-b809e7e7df4f" />
-<img width="1463" height="912" alt="image" src="https://github.com/user-attachments/assets/99bfd8b4-99d0-4e19-a032-e44f1f767ded" />
-
+<img width="1279" height="974" alt="image" src="https://github.com/user-attachments/assets/39f8828f-703a-4199-97a9-f32723f007a5" />
 ---
 Engineered an Event-Driven AIOps Platform: Built a high-concurrency system using Kafka and Faust to ingest and decode massive data streams from IoT, microservices, and logistics sources in real-time.
 
