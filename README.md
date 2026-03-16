@@ -5,9 +5,11 @@ Domain-agnostic AIOps platform designed to ingest and analyze continuous, high-v
 
 The platform designed to ingest, process, analyze, and persist high-velocity logistics telemetry streams. It enables proactive operational intelligence through live feature engineering, anomaly signalling, and time-series analytics.
 ---
-<img width="1321" height="982" alt="image" src="https://github.com/user-attachments/assets/c4e676c2-56fd-41f7-a192-f8ae1f6f3a35" />
+<img width="1380" height="1131" alt="image" src="https://github.com/user-attachments/assets/8b6c4d2d-4766-42e7-a180-31f5690f1626" />
 <img width="1521" height="558" alt="image" src="https://github.com/user-attachments/assets/1c292de7-a06b-43d8-a76a-2c733ff22ef5" />
 <img width="1520" height="941" alt="image" src="https://github.com/user-attachments/assets/2d89f735-bd5b-46fd-9e02-4b25e43f991b" />
+<img width="1518" height="1011" alt="image" src="https://github.com/user-attachments/assets/fc2669b6-2882-4685-803b-91bfbabddd3c" />
+
 
 ## For observability 
 <img width="1557" height="668" alt="image" src="https://github.com/user-attachments/assets/673ccb55-1f7d-45e2-ab02-aebddf1a8085" />
