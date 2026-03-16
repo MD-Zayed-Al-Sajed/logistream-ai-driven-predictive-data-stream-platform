@@ -219,6 +219,26 @@ All anomaly detections surface through observable dashboards requiring human con
 
 </details>
 
+<details>
+<summary><h1>🔐 A Note on Post-Quantum Operational Considerations</summary>
+
+Modern distributed intelligence platforms must consider the long-term impact of emerging quantum computing capabilities on data integrity, authentication, and secure telemetry pipelines.
+
+While this system does not currently implement post-quantum cryptographic primitives by default, its architecture is designed to remain compatible with future migration paths toward quantum-resilient security models.
+
+Potential areas of evolution include:
+
+• Post-quantum secure message authentication for telemetry streams  
+• Quantum-resistant key exchange in distributed orchestration layers  
+• Hybrid classical-quantum optimization workflows for large-scale decision systems  
+• Integration readiness for quantum-accelerated scheduling and routing engines  
+
+These considerations are forward-looking engineering acknowledgements rather than active security guarantees.
+
+Production deployments should conduct formal cryptographic risk assessments and adopt industry-approved post-quantum standards as they mature.
+
+</details>
+
 ## ⭐ Project Status
 
 **Major Phase:** Real-time streaming pipeline operational ✅ <br>
