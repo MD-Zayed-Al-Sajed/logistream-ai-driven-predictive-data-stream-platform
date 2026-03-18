@@ -1,7 +1,7 @@
 Domain-agnostic AIOps platform designed to ingest and analyze continuous, high-volume data streams from heterogeneous sources (Applications, Microservices, IoT, Incidents, and Logistics & Supply Chain). The system replaces batch reporting with real-time, predictive intelligence.
 
-# LogiStream AIOps Platform
-## Distributed real-time event streaming platform
+# LogiStream AIOps
+## A Distributed real-time event streaming & Compute Orchestration platform
 
 The platform designed to ingest, process, analyze, and persist high-velocity data telemetry streams. It enables proactive operational intelligence through live feature engineering, anomaly signalling, and time-series analytics.
 ---
