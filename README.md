@@ -1,5 +1,5 @@
-Domain-agnostic AIOps platform designed to ingest and analyze continuous, high-volume data streams from heterogeneous sources (Applications, Microservices, IoT, Incidents, and Logistics & Supply Chain). The system replaces batch reporting with real-time, predictive intelligence.
-
+A real-time distributed stream processing and compute orchestration platform for operational telemetry, anomaly detection, and time-series intelligence.
+<br>
 ████████████████████████████████████████████████████████████████████████
 # LogiStream AIOps Runtime Engine
 ## A Distributed Real-Time Compute Orchestration Platform
@@ -7,6 +7,10 @@ Domain-agnostic AIOps platform designed to ingest and analyze continuous, high-v
 The platform designed to ingest, process, analyze, and persist high-velocity data telemetry streams. It enables proactive operational intelligence through live feature engineering, anomaly signalling, and time-series analytics.
 ---
 <img width="1380" height="1131" alt="image" src="https://github.com/user-attachments/assets/8b6c4d2d-4766-42e7-a180-31f5690f1626" />
+<details>
+<summary><Strong> <h1> 🛩 Architecture Views </summary></summary>
+███   ███   ███   ███   ███   ███   ███
+ <br>
 <img width="1521" height="558" alt="image" src="https://github.com/user-attachments/assets/1c292de7-a06b-43d8-a76a-2c733ff22ef5" />
 <img width="1520" height="941" alt="image" src="https://github.com/user-attachments/assets/2d89f735-bd5b-46fd-9e02-4b25e43f991b" />
 <img width="1518" height="1011" alt="image" src="https://github.com/user-attachments/assets/fc2669b6-2882-4685-803b-91bfbabddd3c" />
@@ -15,19 +19,12 @@ The platform designed to ingest, process, analyze, and persist high-velocity dat
 ## For observability 
 <img width="1557" height="668" alt="image" src="https://github.com/user-attachments/assets/673ccb55-1f7d-45e2-ab02-aebddf1a8085" />
 <img width="1529" height="266" alt="image" src="https://github.com/user-attachments/assets/1d2b5ef9-4052-43d5-bf6c-c158e1f5288f" />
-████████████████████████████████████████████████████████████████████████
 
-## Platform Overview
-
-- Event-driven Kafka streaming backbone  
-- Stateful real-time processing pipelines  
-- Early operational anomaly signalling  
-- Time-series persistence with analytical readiness  
-- Containerized cloud-native runtime architecture  
-- Observability-first engineering design
+███   ███   ███   ███   ███   ███   ███
+</details>
 
 <details>
-<summary> <h1>🧭 Architectural Decisions</summary>
+<summary> <h1> 🛞 Architectural Decisions </summary>
 
 ### Event-Driven Streaming Backbone  
 The platform adopts a Kafka-centric streaming topology instead of batch ETL pipelines to achieve:
@@ -70,7 +67,27 @@ Dockerized microservices enable:
 </details>
 
 <details>
-<summary> <h1>⚙️ Technical Implementation</summary>
+<summary><h1>🚅 Initial Performance Benchmarks</summary>
+
+Controlled load testing showed the platform scaled from a ~4 EPS baseline to a sustained ~50 EPS on a single-node containerized deployment. Kafka broker CPU and memory emerged as the first scaling boundary, while stream processing and TimescaleDB persistence remained stable.
+
+| Test | Ship EPS | GPS EPS | Total EPS | Duration | Feature Delta | Alert Delta | Combined Persisted Rows/sec | Lag Range | Status | Bottleneck |
+|------|----------|---------|-----------|----------|---------------|-------------|-----------------------------|-----------|--------|------------|
+| Baseline | 2 | 2 | 4 | 60s | 120 | 111 | 3.85 | 4–5 | Pass | None |
+| Phase-1 Clean | 10 | 10 | 20 | 6 min | 4250 | 4250 | 23.6 | 23–41 | Pass | Kafka CPU emerging |
+| Phase-2 Clean | 15 | 15 | 30 | 6 min | 5350 | 5350 | 29.7 | 13–48 | Pass | Kafka CPU saturation |
+| Phase-3 Clean | 20 | 20 | 40 | 6 min | 7100 | 7100 | 39.4 | 24–49 | Pass | Kafka memory/throughput pressure |
+| Phase-4 Clean | 25 | 25 | 50 | 12 min | 17200 | 17200 | 47.8 | 21–43 | Pass | Kafka CPU + memory pressure |
+
+### Benchmark takeaway
+
+The stream processor and sink remained stable under increasing load. The first meaningful scaling boundary appeared at the single-broker Kafka layer, indicating that the next production step would be broker partitioning and multi-node deployment rather than application redesign.
+
+</details>
+
+
+<details>
+<summary> <h1> ⚙️ Technical Implementation </summary>
 
 ### Core Technology Stack
 
@@ -99,6 +116,7 @@ Dockerized microservices enable:
 - Observability-driven debugging workflow  
 
 </details>
+
 
 <details>
 <summary><h1>🪢 System Design Philosophy</summary>
@@ -242,6 +260,15 @@ These considerations are forward-looking engineering acknowledgements rather tha
 Production deployments should conduct formal cryptographic risk assessments and adopt industry-approved post-quantum standards as they mature.
 
 </details>
+
+# Platform Overview
+
+- Event-driven Kafka streaming backbone  
+- Stateful real-time processing pipelines  
+- Early operational anomaly signalling  
+- Time-series persistence with analytical readiness  
+- Containerized cloud-native runtime architecture  
+- Observability-first engineering design
 
 ## ⭐ Project Status
 
