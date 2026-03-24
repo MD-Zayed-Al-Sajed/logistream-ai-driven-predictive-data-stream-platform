@@ -6,6 +6,11 @@
 The platform designed to ingest, process, analyze, and persist high-velocity data telemetry streams. It enables proactive operational intelligence through live feature engineering, anomaly signalling, and time-series analytics.
 ---
 <img width="1380" height="1131" alt="image" src="https://github.com/user-attachments/assets/8b6c4d2d-4766-42e7-a180-31f5690f1626" />
+<h2 align="center">LogiStream Real-Time AIOps Dashboard</h2>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MD-Zayed-Al-Sajed/logistream-aiops-stream-engine/main/assets/logistream-dashboard.gif" width="900"/>
+</p>
 <details>
 <summary><Strong> <h1> 🛩 Architecture Views </summary></summary>
 ███   ███   ███   ███   ███   ███   ███
