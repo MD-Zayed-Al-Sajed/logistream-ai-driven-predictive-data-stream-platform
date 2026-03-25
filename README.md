@@ -217,7 +217,7 @@ All anomaly detections surface through observable dashboards requiring human con
 
 - Engineered an Event-Driven AIOps Infrastructure: Built a high-concurrency system using Kafka and Faust to ingest and decode massive data streams from IoT, microservices, and logistics sources in real-time. ✅
 
-- Designed a Distributed Real-Time Architecture:  Leveraged TimescaleDB hypertables for append-optimized time-series persistence and Avro with Schema Registry for contract-enforced schema governance ensuring data integrity across distributed producers and consumers at sustained throughput of ~47.8 persisted rows per second. ✅
+- Designed a Distributed Real-Time Architecture:  Leveraged TimescaleDB hypertables for append-optimized time-series persistence and Avro with Schema Registry for contract-enforced schema governance ensuring data integrity across distributed producers and consumers at sustained throughput of ~47.8 persisted rows per second (4M+ per day). ✅
   
 - Validated Production-Grade Scalability: Conducted staged load benchmarking across four phases scaling from 4 EPS baseline to 50 EPS sustained over 12 minutes with bounded consumer lag zero service interruptions and zero insertion failures identifying Kafka broker CPU as the primary horizontal scaling boundary. ✅
 
