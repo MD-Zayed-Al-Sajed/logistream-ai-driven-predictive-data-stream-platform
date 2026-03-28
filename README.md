@@ -196,6 +196,8 @@ Any production adoption should be preceded by:
 
 This project is provided for engineering demonstration and research purposes that alligns with production environment.
 
+**LogiStream is engineered for infrastructure health and real-time logistics intelligence. To prevent the accidental creation of autonomous network loops, this engine implements a Human-in-the-Loop (HITL) architecture. It is strictly prohibited to use this codebase for unauthorized lateral movement or non-consensual data harvesting. The creators of LogiStream prioritize the "Immutability of the Kernel" to ensure system stability and security.**
+
 **The author assumes no responsibility for any misuse, unintended consequences, or damages arising from deployment of this software in real-world operational environments.**
 
 </details>
