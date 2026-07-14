@@ -3,7 +3,20 @@
 # LogiStream AIOps Runtime Engine
 ## A real-time distributed stream processing and compute orchestration platform for operational telemetry, anomaly detection, and time-series intelligence.
 
-The platform designed to ingest, process, analyze, and persist high-velocity data telemetry streams. It enables proactive operational intelligence through live feature engineering, anomaly signalling, and time-series analytics.
+The platform is designed to ingest, process, analyze, and persist high-velocity data telemetry streams. It enables proactive operational intelligence through live feature engineering, anomaly signalling, and time-series analytics.
+This platform is designed to be language-agnostic, with the initial prototype and core validations successfully engineered and benchmarked in Python.
+
+## 📄 License
+[![License: Apache_2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
+This project is licensed under the **Apache_2.0**
+
+## License & Attribution
+This project is licensed under the Apache License, Version 2.0. 
+You are free to use, modify, and distribute this software, provided that 
+all original copyright and attribution notices are preserved in any redistributed 
+copies or derivative works.
+Copyright 2025-2026 Zayed Sajed
 ---
 <img width="1380" height="1131" alt="image" src="https://github.com/user-attachments/assets/8b6c4d2d-4766-42e7-a180-31f5690f1626" />
 <h2 align="center">LogiStream Real-Time AIOps Dashboard</h2>
@@ -234,13 +247,7 @@ All anomaly detections surface through observable dashboards requiring human con
 
 █████████████████████████████████
 
-## 📄 License
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-This project is licensed under the **MIT License**
-
-Copyright (c) 2025 Md Zayed Al Sajed
-Permission is hereby granted...
 
 <details>
 <summary><h1> Quantum-Aligned Operational Intelligence (Forward Looking)</summary>
