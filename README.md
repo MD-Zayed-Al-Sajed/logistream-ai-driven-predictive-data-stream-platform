@@ -31,9 +31,7 @@ Copyright 2025-2026 Zayed Sajed
 <img width="1521" height="558" alt="image" src="https://github.com/user-attachments/assets/1c292de7-a06b-43d8-a76a-2c733ff22ef5" />
 <img width="1520" height="941" alt="image" src="https://github.com/user-attachments/assets/2d89f735-bd5b-46fd-9e02-4b25e43f991b" />
 <img width="1518" height="1011" alt="image" src="https://github.com/user-attachments/assets/fc2669b6-2882-4685-803b-91bfbabddd3c" />
-
-
-## For observability 
+ 
 <img width="1557" height="668" alt="image" src="https://github.com/user-attachments/assets/673ccb55-1f7d-45e2-ab02-aebddf1a8085" />
 <img width="1529" height="266" alt="image" src="https://github.com/user-attachments/assets/1d2b5ef9-4052-43d5-bf6c-c158e1f5288f" />
 
@@ -86,7 +84,7 @@ Dockerized microservices enable:
 <details>
 <summary><h1> Initial Performance Benchmarks</summary>
 
-Controlled load testing showed the platform scaled from a ~4 EPS baseline to a sustained ~50 EPS on a single-node containerized deployment. Kafka broker CPU and memory emerged as the first scaling boundary, while stream processing and TimescaleDB persistence remained stable.
+Controlled load testing shows platform scaled from a ~4 EPS baseline to a sustained ~50 EPS on a single-node containerized deployment. Kafka broker CPU and memory emerged as the first scaling boundary, while stream processing and TimescaleDB persistence remained stable.
 
 | Test | Ship EPS | GPS EPS | Total EPS | Duration | Feature Delta | Alert Delta | Combined Persisted Rows/sec | Lag Range | Status | Bottleneck |
 |------|----------|---------|-----------|----------|---------------|-------------|-----------------------------|-----------|--------|------------|
@@ -97,8 +95,6 @@ Controlled load testing showed the platform scaled from a ~4 EPS baseline to a s
 | Phase-4 Clean | 25 | 25 | 50 | 12 min | 17200 | 17200 | 47.8 | 21–43 | Pass | Kafka CPU + memory pressure |
 
 ### Benchmark takeaway
-
-The stream processor and sink remained stable under increasing load. The first meaningful scaling boundary appeared at the single-broker Kafka layer, indicating that the next production step would be broker partitioning and multi-node deployment rather than application redesign.
 
 </details>
 
@@ -157,7 +153,7 @@ The architecture prioritizes **decision latency reduction rather than data accum
 </details>
 
 <details>
-<summary><h1>Current Phase / Future Expansion</summary>
+<summary><h1>Expansions</summary>
 
 ### Predictive Intelligence Layer  
 Planned evolution includes:
@@ -165,21 +161,11 @@ Planned evolution includes:
 - Online anomaly detection models  
 - Delay propagation forecasting  
 - Reinforcement-learning-based routing optimization  
-- Adaptive operational decision engines  
-
-### API & Real-Time Experience Layer  
-
-- Streaming WebSocket gateway  
-- Operational command dashboards  
-- Digital twin logistics simulation integration  
-- Automated mitigation orchestration pipelines  
+- Adaptive operational decision engine
 
 ### Cloud-Scale Distributed Deployment  
 
-- Kubernetes autoscaling clusters  
-- Multi-region Kafka federation  
-- Edge telemetry ingestion nodes  
-- Cost-aware compute scheduling strategies  
+- Kubernetes autoscaling clusters
 
 </details>
 
