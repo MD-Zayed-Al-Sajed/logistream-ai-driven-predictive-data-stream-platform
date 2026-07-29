@@ -9,14 +9,13 @@ This platform is designed to be language-agnostic, with the initial prototype an
 ## 📄 License
 [![License: Apache_2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
-This project is licensed under the **Apache_2.0**
-
-## License & Attribution
 This project is licensed under the Apache License, Version 2.0. 
 You are free to use, modify, and distribute this software, provided that 
 all original copyright and attribution notices are preserved in any redistributed 
 copies or derivative works.
 Copyright 2025-2026 Zayed Sajed
+
+
 ---
 <img width="1380" height="1131" alt="image" src="https://github.com/user-attachments/assets/8b6c4d2d-4766-42e7-a180-31f5690f1626" />
 <h2 align="center">LogiStream Real-Time AIOps Dashboard</h2>
@@ -202,6 +201,32 @@ This project is provided for engineering demonstration and research purposes tha
 </details>
 
 <details>
+<summary><h1> Platform Overview</summary>
+
+<br>
+- Engineered an Event-Driven AIOps Infrastructure: Built a high-concurrency system using Kafka and Faust to ingest and decode massive data streams from IoT, microservices, and logistics sources in real-time. 
+
+- Designed a Distributed Real-Time Architecture:  Leveraged TimescaleDB hypertables for append-optimized time-series persistence and Avro with Schema Registry for contract-enforced schema governance ensuring data integrity across distributed producers and consumers at sustained throughput of ~47.8 persisted rows per second (4M+ per day). 
+  
+- Validated Production-Grade Scalability: Conducted staged load benchmarking across four phases scaling from 4 EPS baseline to 50 EPS sustained over 12 minutes with bounded consumer lag zero service interruptions and zero insertion failures identifying Kafka broker CPU as the primary horizontal scaling boundary. 
+
+- Containerized Cloud-Native Deployment: Managed the full SDLC of a fully containerized environment, ensuring the platform is scalable, observable, and capable of handling heterogeneous data sources with sub-second latency. 
+
+- Implemented Predictive Analytics & ML: Replaced batch reporting with in-flight feature engineering and machine learning to detect anomalies and predict logistics delays before they impact operations. 
+
+- Developed Live Decision Dashboards: Created responsive React-based dashboards that consume live JSON streams via WebSockets, providing stakeholders with instant operational insights and automated system alerts.
+
+- Built with Responsible AI principles: Every automated decision in this system surfaces through human-confirmed dashboards with full audit trails, ensuring AI assists human judgment, never replaces it.
+<br>
+
+</details>
+
+
+█████████████████████████████████
+[![License: Apache_2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+<br><br>
+
+<details>
 <summary><h1> A Note on Responsible AI Design</summary>
 
 <br>
@@ -213,30 +238,15 @@ All anomaly detections surface through observable dashboards requiring human con
 
 </details>
 
-█████████████████████████████████
-# Platform Overview
-
-- Engineered an Event-Driven AIOps Infrastructure: Built a high-concurrency system using Kafka and Faust to ingest and decode massive data streams from IoT, microservices, and logistics sources in real-time. ✅
-
-- Designed a Distributed Real-Time Architecture:  Leveraged TimescaleDB hypertables for append-optimized time-series persistence and Avro with Schema Registry for contract-enforced schema governance ensuring data integrity across distributed producers and consumers at sustained throughput of ~47.8 persisted rows per second (4M+ per day). ✅
-  
-- Validated Production-Grade Scalability: Conducted staged load benchmarking across four phases scaling from 4 EPS baseline to 50 EPS sustained over 12 minutes with bounded consumer lag zero service interruptions and zero insertion failures identifying Kafka broker CPU as the primary horizontal scaling boundary. ✅
-
-- Containerized Cloud-Native Deployment: Managed the full SDLC of a fully containerized environment, ensuring the platform is scalable, observable, and capable of handling heterogeneous data sources with sub-second latency. ✅
-
-- Implemented Predictive Analytics & ML: Replaced batch reporting with in-flight feature engineering and machine learning to detect anomalies and predict logistics delays before they impact operations. 🛠️✅
-
-- Developed Live Decision Dashboards: Created responsive React-based dashboards that consume live JSON streams via WebSockets, providing stakeholders with instant operational insights and automated system alerts. 🛠️✅
-
-- Built with Responsible AI principles: Every automated decision in this system surfaces through human-confirmed dashboards with full audit trails, ensuring AI assists human judgment, never replaces it. ✅
-
-
-█████████████████████████████████
-
-
+<a href="https://doi.org/10.6028/NIST.AI.100-1" target="_blank">
+  <img src="https://img.shields.io/badge/NIST-AI%20RMF%201.0-blue?style=for-the-badge&logo=nist&logoColor=white" alt="NIST AI RMF 1.0">
+</a>
+<a href="https://standards.ieee.org/ieee/7000/6817/" target="_blank">
+  <img src="https://img.shields.io/badge/IEEE-7000--2021%20Ethical%20Design-00629B?style=for-the-badge&logo=ieee&logoColor=white" alt="IEEE 7000">
+</a>
 
 <details>
-<summary><h1> Quantum-Aligned Operational Intelligence (Forward Looking)</summary>
+<summary><h1> Quantum-Aligned & High-Scale Simulation Architecture (Forward Looking)</summary>
 
 Although currently running on classical distributed systems,  
 the platform architecture is compatible with **future hybrid quantum-classical operational workflows.**
@@ -268,6 +278,8 @@ In such contexts, LogiStream can act as a real-time state propagation and operat
 
 </details>
 
+<a href="https://arxiv.org/abs/2602.14263" target="_blank"><img src="https://img.shields.io/badge/arXiv-2602.14263%20Real--Time%20Hybrid%20Framework-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv 2602.14263"></a><a href="https://arxiv.org/abs/2203.13469" target="_blank"><img src="https://img.shields.io/badge/arXiv-2203.13469%20QUBO%20Routing-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv 2203.13469"></a><a href="https://doi.org/10.3389/fphy.2022.940293" target="_blank"><img src="https://img.shields.io/badge/Frontiers-10.3389%2Ffphy.2022.940293%20Real--Time%20Execution-21A366?style=for-the-badge&logo=frontiers&logoColor=white" alt="Frontiers Physics DOI"></a>
+
 <details>
 <summary><h1> A Note on Post-Quantum Operational Considerations</summary>
 
@@ -287,5 +299,12 @@ These considerations are forward-looking engineering acknowledgements rather tha
 Production deployments should conduct formal cryptographic risk assessments and adopt industry-approved post-quantum standards as they mature.
 
 </details>
+<a href="https://doi.org/10.6028/NIST.FIPS.203" target="_blank">
+  <img src="https://img.shields.io/badge/NIST-FIPS%20203%20(ML--KEM)-blue?style=for-the-badge&logo=nist&logoColor=white" alt="NIST FIPS 203 Link">
+</a>
+<a href="https://www.rfc-editor.org/info/rfc9954/" target="_blank">
+  <img src="https://img.shields.io/badge/IETF-RFC%209954%20(Hybrid%20TLS)-107C41?style=for-the-badge&logo=ietf&logoColor=white" alt="IETF RFC 9954 Link">
+</a>
+
 
 
