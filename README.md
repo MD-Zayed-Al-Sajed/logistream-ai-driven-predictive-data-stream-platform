@@ -7,7 +7,7 @@ The platform is designed to ingest, process, analyze, and persist high-velocity 
 This platform is designed to be language-agnostic, with the initial prototype and core validations successfully engineered and benchmarked in Python.
 
 ## 📄 License
-[![License: Apache_2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![License: Apache_2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE) [![DOI](https://zenodo.org/badge/1096829299.svg)](https://doi.org/10.5281/zenodo.21971620)
 
 This project is licensed under the Apache License, Version 2.0. 
 You are free to use, modify, and distribute this software, provided that 
@@ -223,7 +223,8 @@ This project is provided for engineering demonstration and research purposes tha
 
 
 █████████████████████████████████
-[![License: Apache_2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+<br>
+[![License: Apache_2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE) [![DOI](https://zenodo.org/badge/1096829299.svg)](https://doi.org/10.5281/zenodo.21971620)
 <br><br>
 
 <details>
