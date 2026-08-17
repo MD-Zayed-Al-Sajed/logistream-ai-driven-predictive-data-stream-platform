@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software or platform architecture, please cite it as below."
+authors:
+  - family-names: "Sajed"
+    given-names: "Md Zayed Al"
+title: "LogiStream AIOps Stream Engine"
+version: "1.0.0"
+date-released: "2026-08-16"
+url: "https://github.com/MD-Zayed-Al-Sajed/logistream-aiops-stream-engine"
