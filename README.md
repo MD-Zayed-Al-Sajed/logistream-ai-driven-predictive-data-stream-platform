@@ -152,23 +152,6 @@ The architecture prioritizes **decision latency reduction rather than data accum
 </details>
 
 <details>
-<summary><h1>Expansions</summary>
-
-### Predictive Intelligence Layer  
-Planned evolution includes:
-
-- Online anomaly detection models  
-- Delay propagation forecasting  
-- Reinforcement-learning-based routing optimization  
-- Adaptive operational decision engine
-
-### Cloud-Scale Distributed Deployment  
-
-- Kubernetes autoscaling clusters
-
-</details>
-
-<details>
 <summary><h1> Responsible Use & Operational Scope</summary>
 The system is **not designed or certified** for deployment in regulated or life-critical domains such as:
 
@@ -227,6 +210,25 @@ This project is provided for engineering demonstration and research purposes tha
 [![License: Apache_2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE) [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21971620-blue.svg)](https://doi.org/10.5281/zenodo.21971620)
 
 <details>
+<summary><h1> Extra</summary>
+  <details>
+<summary><h1>Expansions</summary>
+
+### Predictive Intelligence Layer  
+Planned evolution includes:
+
+- Online anomaly detection models  
+- Delay propagation forecasting  
+- Reinforcement-learning-based routing optimization  
+- Adaptive operational decision engine
+
+### Cloud-Scale Distributed Deployment  
+
+- Kubernetes autoscaling clusters
+
+</details>
+
+  <details>
 <summary><h1> A Note on Responsible AI Design</summary>
 
 <br>
@@ -306,5 +308,7 @@ Production deployments should conduct formal cryptographic risk assessments and 
   <img src="https://img.shields.io/badge/IETF-RFC%209954%20(Hybrid%20TLS)-107C41?style=for-the-badge&logo=ietf&logoColor=white" alt="IETF RFC 9954 Link">
 </a>
 
+
+</details>
 
 
